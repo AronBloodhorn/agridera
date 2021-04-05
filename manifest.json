@@ -1,0 +1,25 @@
+{
+  "name": "Agridera",
+  "short_name": "Agridera",
+  "start_url": "/homepage.html",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#31f51b5b",
+  "description": "Agridera Seeds and Agriculture Ltd",
+  "dir": "agridera",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/icons/app-icon-48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "images/icons/app-icon-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ]
+}

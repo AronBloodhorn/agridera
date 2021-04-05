@@ -1,0 +1,378 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+  background-color: #ccc;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+.menu__box{
+  display: none;
+}
+
+.banner{
+  background-image: url(images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  padding: 20px;
+}
+
+.menu-img{
+  display: none;
+}
+.hamburger-menu .search{
+  display: none;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+}
+
+.search{
+  padding: 10px 0;
+  position: relative;
+  margin-bottom: 10px;
+}
+.search::before{
+  content: '';
+  position: absolute; 
+  height: 1px;
+  width: 100%;
+  background-color: #000;
+  bottom: 8px;  
+}
+
+.nav input{
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Roboto Slab', serif;
+}
+.search__btn{
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.search__btn img{
+  width: 100%;
+}
+
+.nav-items{
+  display: flex;
+  list-style: none;
+  font-weight: 500;
+}
+.nav-item{
+  margin-left: 10px;
+  color: #324950;
+}
+.nav-item:hover{
+  color: #57984C;
+}
+
+.banner__title{
+  text-align: center;
+  margin-top: 225px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #735440;
+  font-family: 'Roboto Slab', serif;
+}
+.banner__btn{
+  background-color: #57984C;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-top: 60px;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  padding: 16px 31px;
+}
+
+/* -------------------------PRODUCTS------------------------ */
+.products{
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 30px 70px;
+}
+.product-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-item__img{
+  
+}
+.product-item__title{
+  text-transform: capitalize;
+}
+
+/* -------------------------VISION-MISSION------------------------ */
+.vision-mission{  
+  font-family: 'Roboto Slab', serif;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  
+  background-color: #ededed;
+}
+.vision-mission__wrapper{
+  background-image: url(images/Union.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.vision-mission__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vision-mission-text{
+  padding: 0 50px;
+  margin: 0 45px;
+}
+.text__title{
+  color: #324950;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.vision-mission__descr{
+  margin-top: 35px;
+  font-size: 20px;
+}
+.vision-mission-img{
+  position: relative;
+  
+}
+.vision-mission-img img{
+  max-height: 100%;
+}
+.play-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* -------------------------ACTIVITIES------------------------ */
+.activities{
+  padding-top: 70px;
+  padding-bottom: 90px;
+  font-family: 'Roboto Slab', serif;
+  background-color: #E5E5E5;
+}
+.activities .separator{
+  text-align: center;
+}
+.activity-items{
+  display: flex;
+  justify-content: space-between;
+}
+.activity-item{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.activities .text__title{
+  text-align: center;
+}
+.activity-item__title{
+  width: 100%;
+  text-align: center;
+  color: #57984C; 
+  font-size: 24px;
+  font-weight: 800;
+  position: relative;
+  margin-bottom: 50px;
+}
+.activity-item__title::before{
+  content: '';
+  width: 75%;
+  height: 1px;
+  background-color: #57984C;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+.activity-item__descr{
+  text-align: center;
+  color: #324950;
+  font-size: 18px;
+  padding: 0 5px;
+}
+.activity-item__img{
+  height: 215px;
+  margin-bottom: 25px;
+}
+
+
+/* -------------------------FOOTER------------------------ */
+.footer li{
+  list-style: none;
+}
+.footer{
+  background-color: #2D3F45;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 10px;
+}
+
+.footer-nav{
+  display: flex;
+  align-items: center;
+}
+.footer-nav__item{
+  margin-right: 15px;
+  color: #fff;
+}
+.footer-nav__item:hover{
+  color: #57984C;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+}
+.footer-social__item{
+  margin-right: 15px;
+}
+
+.footer-bottom{
+  background-color: #324950;
+  color: #B9B9B9;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* -------------------------MEDIA------------------------ */
+@media (max-width: 1140px) {
+  .product-item{
+    font-size: 11px;
+  }
+  .product-item__img img{
+    height: 40px;
+  }
+
+  .vision-mission__item{
+    flex-direction: column;
+  }
+
+  .vision-mission__item-second .vision-mission-img{
+    order: 2;
+  }
+
+  .activity-items{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links{
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+
+
+@media (max-width: 991px) {  
+  .banner__title{
+    font-size: 40px;
+  }
+
+  .text__title{
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 779px) {
+  .products{
+    flex-wrap: wrap; 
+    padding: 30px 10px;   
+  }
+  .product-item{
+    width: 25%;
+    margin-bottom: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .product-item__img{
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .product-item__img img{
+    height: 100%;
+  }
+
+  .vision-mission-img{
+    height: 320px;
+  }
+  .vision-mission-img img{
+    height: 100%;
+  }
+
+  .vision-mission-text{
+    margin: 0;
+  }
+
+  .vision-mission__descr{
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .text__title{
+    font-size: 40px;
+  }
+
+  .activity-item__descr{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px){
+  
+}
+
+@media (max-width: 400px){
+  /* .menu__btn{
+    right: 30px;
+  } */
+  .banner__title{
+    font-size: 30px;
+  }
+  .vision-mission-img{
+    height: 240px;
+  }
+  .activity-item__img{
+    height: 150px;
+  }
+  .activity-item__img img{
+    height: 100%;
+  }
+  .text__title{
+    font-size: 30px;
+  }
+  .footer-bottom{
+    font-size: 12px;
+  }
+}
