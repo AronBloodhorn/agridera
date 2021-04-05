@@ -2,11 +2,11 @@ var app = new Vue({
   el: '#app',
   data: {
     products: [
-      { id: 1, title: 'Almaz', short_text: 'short_text', image: 'images/eggplant/1almaz.jpg', descr: 'Full descr' },
-      { id: 2, title: 'Epic F1', short_text: 'short_text', image: 'images/eggplant/2epicf1.jpg', descr: 'Full descr' },
-      { id: 3, title: 'Swan', short_text: 'short_text', image: 'images/eggplant/3lebed.jpg', descr: 'Full descr' },
-      { id: 4, title: 'Ping Pong', short_text: 'short_text', image: 'images/eggplant/4ping-pong.jpg', descr: 'Full descr' },
-      { id: 5, title: 'White', short_text: 'short_text', image: 'images/eggplant/5white.jpg', descr: 'Full descr' },
+      { id: 1, title: 'Амур', short_text: 'short_text', image: 'images/cucumber/Амур.jpg', descr: 'Full descr' },
+      { id: 2, title: 'Кибрия', short_text: 'short_text', image: 'images/cucumber/Кибрия.jpg', descr: 'Full descr' },
+      { id: 3, title: 'Кураж', short_text: 'short_text', image: 'images/cucumber/Кураж.jpg', descr: 'Full descr' },
+      { id: 4, title: 'Лютояр', short_text: 'short_text', image: 'images/cucumber/Лютояр.jpg', descr: 'Full descr' },
+      { id: 5, title: 'Эколь', short_text: 'short_text', image: 'images/cucumber/Эколь.jpg', descr: 'Full descr' },
     ],
     product: [{}],
     btnVisible: 0,
