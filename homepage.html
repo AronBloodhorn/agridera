@@ -15,6 +15,41 @@
   <link rel="stylesheet" href="homepage.css">
   <link rel="stylesheet" href="media-query-burger-menu.css">
   <link rel="manifest" href="manifest.json">
+  <script>
+    function askPermission() {
+            return new Promise(function (resolve, reject) {
+                const permissionResult = Notification.requestPermission(function (result) {
+                    resolve(result)
+                })
+
+                if (permissionResult) {
+                    permissionResult.then(resolve, reject)
+                }
+            })
+            .then(function (permissionResult) {
+                if (permissionResult !== 'granted') {
+                    throw new Error('We weren\'t greanted permission.')
+                }
+            })
+        }
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+            .register('sw.js')
+            .then(function() {
+                console.log('Service Worker registered!')
+            })
+
+            navigator.serviceWorker.ready.then(registration => {
+                if ('PushManager' in window) {
+                    document.querySelector('button.subscribe-for-push')
+                        .addEventListener('click', () => {
+                            askPermission()
+                        })
+                }
+            })
+        }
+  </script>
 </head>
 
 <body>
@@ -78,7 +113,7 @@
     </header>
 
     <h1 class="banner__title">Agridera Seeds and Agriculture Ltd</h1>
-    <button class="banner__btn btn btn-success">read more</button>
+    <button class="banner__btn btn btn-success subscribe-for-push">subscribe</button>
   </div>
 
 
